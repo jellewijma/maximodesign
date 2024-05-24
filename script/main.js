@@ -201,7 +201,7 @@ function showSidebar() {
         img.setAttribute('src', catalogus.img[i + j - 2].url);
         // img.classList = 'w-1/2 object-contain object-left';
         img.classList = ((i % 2 !== 0) ? 'w-1/2 object-contain object-left' : 'w-1/2 object-contain object-right');
-        img.dataset.index = i + j;
+        img.dataset.index = i + j - 2;
         div.appendChild(img);
       }
     }
