@@ -131,7 +131,9 @@ function init() {
 
   page = 0;
   showGallery();
-  showSidebar();
+  if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    showSidebar();
+  }
 }
 
 function prev() {
@@ -149,22 +151,42 @@ function next() {
 function showGallery(state) {
   console.log('show gallery');
 
-  if (page === 0) {
-    gallery.innerHTML = '';
-    createImage(0);
-    counter.innerHTML = `1 / ${catalogus.img.length}`;
-    // exit
-    return;
-  } else if (state === 'next') {
-    gallery.innerHTML = '';
-    createImage(page - 1);
-    createImage(page);
-  } else if (state === 'prev') {
-    gallery.innerHTML = '';
-    createImage(page - 1);
-    createImage(page);
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    // true for mobile device
+    // show pages vertically
+    const slider = document.createElement('div');
+    catalogus.img.forEach((img, i) => {
+      let imgEl = document.createElement('img');
+      imgEl.setAttribute('src', img.url);
+      imgEl.classList = 'w-full object-contain pb-4';
+      slider.appendChild(imgEl);
+      gallery.appendChild(slider);
+      slider.classList = 'flex flex-col overflow-y-scroll px-8 py-4 w-full';
+      // gallery.classList = 'flex flex-col overflow-y-scroll p-8';
+    }
+    );
+  } else {
+    // false for not mobile device
+    if (page === 0) {
+      gallery.innerHTML = '';
+      createImage(0);
+      counter.innerHTML = `1 / ${catalogus.img.length}`;
+      // exit
+      return;
+    } else if (state === 'next') {
+      gallery.innerHTML = '';
+      createImage(page - 1);
+      createImage(page);
+    } else if (state === 'prev') {
+      gallery.innerHTML = '';
+      createImage(page - 1);
+      createImage(page);
+    }
+    counter.innerHTML = `${page} / ${catalogus.img.length}`;
   }
-  counter.innerHTML = `${page} / ${catalogus.img.length}`;
+
+
+
 }
 
 function createImage(imgNumber) {
