@@ -191,7 +191,7 @@ function showGallery(state) {
 
 function createImage(imgNumber) {
   let img = document.createElement('img');
-  img.setAttribute('src', catalogus.img[imgNumber].url);
+  img.setAttribute('src', '.' + catalogus.img[imgNumber].url);
   img.classList = ((imgNumber % 2 !== 0) ? 'w-1/2 object-contain object-right' : 'w-1/2 object-contain object-left');
   img.dataset.index = imgNumber;
   gallery.appendChild(img);
@@ -211,7 +211,7 @@ function showSidebar() {
       div.appendChild(empty);
 
       let img = document.createElement('img');
-      img.setAttribute('src', catalogus.img[i].url);
+      img.setAttribute('src', '.' + catalogus.img[i].url);
       img.classList = 'w-1/2 object-contain object-center';
       img.dataset.index = i;
       div.appendChild(img);
@@ -220,7 +220,7 @@ function showSidebar() {
       // create 2 images per row
       for (let j = 1; j < 3; j++) {
         let img = document.createElement('img');
-        img.setAttribute('src', catalogus.img[i + j - 2].url);
+        img.setAttribute('src', '.' + catalogus.img[i + j - 2].url);
         // img.classList = 'w-1/2 object-contain object-left';
         img.classList = ((i % 2 !== 0) ? 'w-1/2 object-contain object-left' : 'w-1/2 object-contain object-right');
         img.dataset.index = i + j - 2;
