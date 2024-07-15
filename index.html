@@ -14,8 +14,8 @@
 
 <body class="bg-[#121111] w-screen h-screen overflow-hidden">
   <nav class="flex justify-between items-center w-screen border-b border-zinc-100">
-    <a href="./index.html"><svg width="58" height="49" viewBox="0 0 58 49" class="m-8" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
+    <a href="./index.html">
+      <svg width="58" height="49" viewBox="0 0 58 49" class="m-8" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="Middel 1100 1" clip-path="url(#clip0_1_217)">
           <g id="Laag 1">
             <g id="Group">
@@ -33,7 +33,8 @@
             <rect width="58" height="49" fill="white" />
           </clipPath>
         </defs>
-      </svg></a>
+      </svg>
+    </a>
 
     <div class="flex gap-3 m-5 hidden md:block">
       <!-- <a href="dashboard"
@@ -60,7 +61,7 @@
   <div class="flex flex-col-reverse w-screen h-[calc(100vh-97px)] md:h-[calc(100vh-114px)] md:flex-row">
     <div class="w-full md:w-1/2 flex flex-col justify-between">
       <p
-        class="text-zinc-100 text-[26px] h-full font-normal text-xl md:text-4xl font-montserrat leading-relaxed p-8 order-last md:order-first">
+        class="text-zinc-100 xl:text-[26px] h-full font-normal text-xl md:text-4xl font-montserrat leading-relaxed p-8 order-last md:order-first">
         Bij Maximo Design begrijpen we dat jouw huis meer is dan alleen een plek om te wonen. het is een afspiegeling
         van jouw stijl, jouw comfort, en jouw levensstijl. Daarom streven we ernaar om hoogwaardige, stijlvolle en
         functionele sanitair oplossingen te bieden die perfect aansluiten bij jouw behoeften en wensen.
@@ -72,29 +73,25 @@
           kwaliteit
         </h3>
       </div>
-      <h1 class="text-zinc-100 text-[110px] h-fit font-semibold font-abril leading-[110px] p-8">
+      <h1
+        class="text-zinc-100 text-[60px] min-[1600px]:text-[110px] h-fit font-semibold font-abril leading-[110px] p-8">
         Maximo Design
       </h1>
     </div>
     <div class="w-full md:w-1/2 h-1/2 md:h-full border-l border-md-white">
       <div class="w-full h-full flex flex-row overflow-clip">
         <!-- <div class="ani w-full flex"> -->
-        <div class="test w-[300vw]">
-          <img src="./img/b6fb492de34e2a98f76a6fe249b4a07f.jpeg" class="w-[50vw]">
-          <!-- <img src="./img/b6fb492de34e2a98f76a6fe249b4a07f.jpeg" class="w-[50vw]"> -->
-          <!-- <img src="/img/b6fb492de34e2a98f76a6fe249b4a07f.jpeg" alt="" srcset=""
-            class="object-cover w-full h-full flex-1">
-          <img src="/img/b6fb492de34e2a98f76a6fe249b4a07f.jpeg" alt="" srcset=""
-            class="object-cover w-full h-full flex-1">
-          <img src="/img/b6fb492de34e2a98f76a6fe249b4a07f.jpeg" alt="" srcset=""
-            class="object-cover w-full h-full flex-1">
-          <img src="/img/b6fb492de34e2a98f76a6fe249b4a07f.jpeg" alt="" srcset=""
-            class="object-cover w-full h-full flex-1">
-          <img src="/img/b6fb492de34e2a98f76a6fe249b4a07f.jpeg" alt="" srcset=""
-            class="object-cover w-full h-full flex-1"> -->
+        <div class="test w-[350vw] h-full flex ani">
+          <img src="./img/gallery/IMG_4095.jpg" class="w-[50vw] h-full object-cover">
+          <img src="./img/gallery/IMG_4310-Edit2-5-15032024-2.jpg" class="w-[50vw] h-full object-cover">
+          <img src="./img/gallery/IMG_4323-3-2.jpg" class="w-[50vw] h-full object-cover">
+          <img src="./img/gallery/IMG_6196-2.jpg" class="w-[50vw] h-full object-cover">
+          <img src="./img/gallery/IMG_6940.jpg" class="w-[50vw] h-full object-cover">
+          <img src="./img/gallery/RVS-3.jpg" class="w-[50vw] h-full object-cover">
+          <img src="./img/gallery/IMG_4095.jpg" class="w-[50vw] h-full object-cover">
         </div>
       </div>
-      <div class="w-1/5 absolute bottom-[50vh] md:bottom-8 inset-x-[40%] md:inset-x-[65%] flex justify-between mx-auto">
+      <!-- <div class="w-1/5 absolute bottom-[50vh] md:bottom-8 inset-x-[40%] md:inset-x-[65%] flex justify-between mx-auto">
         <div class="p-2 rounded-full bg-stone-600 border border-2"></div>
         <div class="p-2 rounded-full bg-zinc-300 border border-2"></div>
         <div class="p-2 rounded-full bg-zinc-100 border border-2"></div>
@@ -103,7 +100,7 @@
         <div
           class="p-2 rounded-full bg-yellow-600 border border-2 after:p-[3px] after:bg-md-white after:rounded-full after:absolute after:right-[7px] after:bottom-[-14px]">
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </body>
@@ -114,52 +111,64 @@
   /* .test {} */
 
   .ani {
-    animation: fadeIn 20s ease-in-out infinite;
+    animation: 20s fadeIn infinite;
   }
 
   @keyframes fadeIn {
     0% {
-      transform: translateX(0);
+      transform: translateX(0vw);
     }
 
-    13% {
-      transform: translateX(0%);
+    8% {
+      transform: translateX(0vw);
     }
 
-    20% {
-      transform: translateX(-100%);
+    16% {
+      transform: translateX(-50vw);
     }
 
-    33% {
-      transform: translateX(-100%);
+    24% {
+      transform: translateX(-50vw);
+    }
+
+    32% {
+      transform: translateX(-100vw);
     }
 
     40% {
-      transform: translateX(-200%);
+      transform: translateX(-100vw);
     }
 
-    53% {
-      transform: translateX(-200%);
+    48% {
+      transform: translateX(-150vw);
     }
 
-    60% {
-      transform: translateX(-300%);
+    56% {
+      transform: translateX(-150vw);
     }
 
-    73% {
-      transform: translateX(-300%);
+    64% {
+      transform: translateX(-200vw);
+    }
+
+    72% {
+      transform: translateX(-200vw);
     }
 
     80% {
-      transform: translateX(-400%);
+      transform: translateX(-250vw);
     }
 
-    93% {
-      transform: translateX(-400%);
+    88% {
+      transform: translateX(-250vw);
     }
 
     100% {
-      transform: translateX(-500%);
+      transform: translateX(-300vw);
     }
+  }
+
+  img {
+    max-width: none;
   }
 </style>
