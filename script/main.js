@@ -127,7 +127,6 @@ function init() {
       { "placement": 102, "url": './catalogus/102.jpg' }
     ]
   };
-  console.log(catalogus.img)
 
   page = 0;
   showGallery();
@@ -137,20 +136,16 @@ function init() {
 }
 
 function prev() {
-  console.log('prev');
   page -= 2;
   showGallery('prev');
 }
 
 function next() {
-  console.log('next');
   page += 2;
   showGallery('next');
 }
 
 function showGallery(state) {
-  console.log('show gallery');
-
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     // true for mobile device
     // show pages vertically
@@ -194,12 +189,11 @@ function createImage(imgNumber) {
   img.setAttribute('src', catalogus.img[imgNumber].url);
   img.classList = ((imgNumber % 2 !== 0) ? 'w-1/2 object-contain object-right' : 'w-1/2 object-contain object-left');
   img.dataset.index = imgNumber;
+  img.onclick = showImage;
   gallery.appendChild(img);
 }
 
 function showSidebar() {
-  console.log('show sidebar');
-
   for (let i = 0; i < catalogus.img.length; i += 2) {
     let div = document.createElement('div');
     div.classList = 'flex justify-between items-center p-2 border-b border-gray-300';
@@ -233,12 +227,9 @@ function showSidebar() {
 }
 
 function goToSlide(e) {
-  console.log('go to slide');
 
   if (e.target.tagName === 'IMG') {
-    console.log(e.target.dataset.index);
     page = parseInt(e.target.dataset.index);
-    console.log(page);
     // make page even number
     if (page % 2 !== 0) {
       page += 1;
@@ -246,4 +237,39 @@ function goToSlide(e) {
 
     showGallery('next');
   }
+}
+
+function showImage(e) {
+  console.log('show image');
+  console.log(e.target);
+
+  // get index of image
+  index = parseInt(e.target.dataset.index);
+  console.log(index);
+  // get image url
+  let url = catalogus.img[index].url;
+  console.log(url);
+
+  // create modal
+  let modal = document.createElement('div');
+  modal.classList = 'fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center';
+  modal.onclick = closeModal;
+  document.body.appendChild(modal);
+
+  // create image
+  let img = document.createElement('img');
+  img.setAttribute('src', url);
+  img.classList = 'object-contain';
+  modal.appendChild(img);
+
+  // create close button
+  let close = document.createElement('div');
+  close.classList = 'absolute top-0 right-0 p-4 cursor-pointer';
+  close.innerHTML = 'X';
+  close.onclick = closeModal;
+  modal.appendChild(close);
+}
+
+function closeModal() {
+  document.querySelector('.fixed').remove();
 }
