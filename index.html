@@ -36,11 +36,7 @@
       </svg>
     </a>
 
-    <div class="flex gap-3 m-5 hidden md:block">
-      <!-- <a href="dashboard"
-        class="w-[180px] h-[49px] px-6 py-2 rounded-[100px] border-2 border-zinc-100 justify-center items-center inline-flex">
-        <div class="text-zinc-100 text-xl font-medium font-['Montserrat'] uppercase">dashboard</div>
-      </a> -->
+    <div class="flex gap-3 m-5 hidden xl:block">
       <a href="./contact.html"
         class="w-[180px] h-[49px] px-6 py-2 rounded-[100px] border-2 border-zinc-100 justify-center items-center inline-flex">
         <div class="text-zinc-100 text-xl font-medium font-['Montserrat'] uppercase">CONTACT</div>
@@ -51,36 +47,35 @@
       </a>
     </div>
 
-    <div class="p-4 md:hidden">
+    <div class="p-4 xl:hidden">
       <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
         <line x1="16" y1="24.4316" x2="48" y2="24.4316" stroke="#EFEFEF" />
         <line x1="16" y1="40.4316" x2="48" y2="40.4316" stroke="#EFEFEF" />
       </svg>
     </div>
   </nav>
-  <div class="flex flex-col-reverse w-screen h-[calc(100vh-97px)] md:h-[calc(100vh-114px)] md:flex-row">
-    <div class="w-full md:w-1/2 flex flex-col justify-between">
+  <div class="flex flex-col-reverse w-screen  h-[calc(100vh-97px)] xl:h-[calc(100vh-114px)] xl:flex-row">
+    <div class="w-full h-1/2 xl:w-1/2 xl:h-full flex flex-col-reverse xl:flex-col justify-end xl:justify-between">
       <p
-        class="text-zinc-100 xl:text-[26px] h-full font-normal text-xl md:text-4xl font-montserrat leading-relaxed p-8 order-last md:order-first">
+        class="text-zinc-100 xl:text-[26px] xl:h-full font-normal text-xl md:text-4xl font-montserrat leading-relaxed p-8 order-last md:order-first">
         Bij Maximo Design begrijpen we dat jouw huis meer is dan alleen een plek om te wonen. het is een afspiegeling
         van jouw stijl, jouw comfort, en jouw levensstijl. Daarom streven we ernaar om hoogwaardige, stijlvolle en
         functionele sanitair oplossingen te bieden die perfect aansluiten bij jouw behoeften en wensen.
       </p>
-      <div class="">
+      <div class="h-max">
         <h3
           class="flex-row-reverse text-zinc-100 text-[26px] h-full font-normal font-montserrat leading-relaxed mt-full pl-8">
           Kranen met <br>
           kwaliteit
         </h3>
+        <h1
+          class="text-zinc-100 text-9xl xl:text-[60px] min-[1600px]:text-[110px] h-fit font-thin font-['abril_display'] leading-[110px] p-8">
+          Maximo Design
+        </h1>
       </div>
-      <h1
-        class="text-zinc-100 text-[60px] min-[1600px]:text-[110px] h-fit font-semibold font-abril leading-[110px] p-8">
-        Maximo Design
-      </h1>
     </div>
-    <div class="w-full md:w-1/2 h-1/2 md:h-full border-l border-md-white">
+    <div class="w-full xl:w-1/2 h-1/2 xl:h-full border-l border-md-white">
       <div class="w-full h-full flex flex-row overflow-clip">
-        <!-- <div class="ani w-full flex"> -->
         <div class="test w-[350vw] h-full flex ani">
           <img src="./img/gallery/IMG_4095.jpg" class="w-[50vw] h-full object-cover">
           <img src="./img/gallery/IMG_4310-Edit2-5-15032024-2.jpg" class="w-[50vw] h-full object-cover">
@@ -91,16 +86,6 @@
           <img src="./img/gallery/IMG_4095.jpg" class="w-[50vw] h-full object-cover">
         </div>
       </div>
-      <!-- <div class="w-1/5 absolute bottom-[50vh] md:bottom-8 inset-x-[40%] md:inset-x-[65%] flex justify-between mx-auto">
-        <div class="p-2 rounded-full bg-stone-600 border border-2"></div>
-        <div class="p-2 rounded-full bg-zinc-300 border border-2"></div>
-        <div class="p-2 rounded-full bg-zinc-100 border border-2"></div>
-        <div class="p-2 rounded-full bg-neutral-700 border border-2"></div>
-        <div class="p-2 rounded-full bg-yellow-900 border border-2"></div>
-        <div
-          class="p-2 rounded-full bg-yellow-600 border border-2 after:p-[3px] after:bg-md-white after:rounded-full after:absolute after:right-[7px] after:bottom-[-14px]">
-        </div>
-      </div> -->
     </div>
   </div>
 </body>
@@ -108,8 +93,6 @@
 </html>
 
 <style>
-  /* .test {} */
-
   .ani {
     animation: 20s fadeIn infinite;
   }

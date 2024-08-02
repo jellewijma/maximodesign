@@ -63,7 +63,7 @@
   </nav>
   <div class="w-screen flex">
     <div
-      class="w-0 xl:w-1/4 h-[calc(100vh-114px)] flex flex-col justify-between xl:border-r xl:border-white overflow-y-scroll hide-scroll"
+      class="w-0 xl:w-1/4 h-[calc(100vh-114px)] flex flex-col justify-between xl:border-r xl:border-white overflow-y-scroll scroll-style"
       id="sidebar">
     </div>
     <div class="w-full xl:w-3/4 h-[calc(100vh-114px)] flex flex-col">
@@ -92,13 +92,14 @@
   </div>
 </body>
 <style>
-  .hide-scroll::-webkit-scrollbar {
-    display: none;
+  .scroll-style::-webkit-scrollbar-track {
+    background: black;
   }
 
-  .hide-scroll {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  /* Handle */
+  .scroll-style::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
   }
 </style>
 
