@@ -47,7 +47,7 @@
       </a>
     </div>
 
-    <div class="p-4 xl:hidden">
+    <div class="p-4 xl:hidden cursor-pointer" id="menu">
       <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
         <line x1="16" y1="24.4316" x2="48" y2="24.4316" stroke="#EFEFEF" />
         <line x1="16" y1="40.4316" x2="48" y2="40.4316" stroke="#EFEFEF" />
@@ -76,16 +76,55 @@
     </div>
     <div class="w-full xl:w-1/2 h-1/2 xl:h-full border-l border-md-white">
       <div class="w-full h-full flex flex-row overflow-clip">
-        <div class="test w-[350vw] h-full flex ani">
-          <img src="./img/gallery/IMG_4095.jpg" class="w-[50vw] h-full object-cover">
-          <img src="./img/gallery/IMG_4310-Edit2-5-15032024-2.jpg" class="w-[50vw] h-full object-cover">
-          <img src="./img/gallery/IMG_4323-3-2.jpg" class="w-[50vw] h-full object-cover">
-          <img src="./img/gallery/IMG_6196-2.jpg" class="w-[50vw] h-full object-cover">
-          <img src="./img/gallery/IMG_6940.jpg" class="w-[50vw] h-full object-cover">
-          <img src="./img/gallery/RVS-3.jpg" class="w-[50vw] h-full object-cover">
-          <img src="./img/gallery/IMG_4095.jpg" class="w-[50vw] h-full object-cover">
+        <div class="test width-[700vw] xl:w-[350vw] h-full flex ani">
+          <img src="./img/gallery/IMG_4095.jpg" class="w-[100vw] xl:w-[50vw] h-full object-cover">
+          <img src="./img/gallery/IMG_4310-Edit2-5-15032024-2.jpg" class="w-[100vw] xl:w-[50vw] h-full object-cover">
+          <img src="./img/gallery/IMG_4323-3-2.jpg" class="w-[100vw] xl:w-[50vw] h-full object-cover">
+          <img src="./img/gallery/IMG_6196-2.jpg" class="w-[100vw] xl:w-[50vw] h-full object-cover">
+          <img src="./img/gallery/IMG_6940.jpg" class="w-[100vw] xl:w-[50vw] h-full object-cover">
+          <img src="./img/gallery/RVS-3.jpg" class="w-[100vw] xl:w-[50vw] h-full object-cover">
+          <img src="./img/gallery/IMG_4095.jpg" class="w-[100vw] xl:w-[50vw] h-full object-cover">
         </div>
       </div>
+    </div>
+  </div>
+  <div
+    class="w-screen h-[calc(100vh-97px)] xl:h-[calc(100vh-114px)] absolute top-[97px] xl:top-[114px] bg-[#121111] border-t border-[#EFEFEF]"
+    id="list">
+    <div class="w-full h-[40vh] flex flex-col justify-around items-center border-b border-[#EFEFEF]">
+      <div class="">
+        <a href="./catalogus.html"
+          class="w-[310px] h-[49px] px-6 py-2 bg-[#2D00E5] rounded-[100px] border-2 border-[#EFEFEF] justify-center items-center gap-2 inline-flex">
+          <div class="text-zinc-100 text-xl font-medium font-['Montserrat'] uppercase">NAAR CATALOGUS</div>
+        </a>
+      </div>
+      <div class="">
+        <a href="./catalogus.pdf" download="catalogus.pdf"
+          class="w-[350px] h-[49px] px-6 py-2 rounded-[100px] border-2 border-[#EFEFEF] justify-center items-center gap-2 inline-flex">
+          <div class="text-zinc-100 text-xl font-medium font-['Montserrat'] uppercase">Download CATALOGUS
+            <svg width="20" height="20" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="inline">
+              <g id="download-2">
+                <path id="Icon"
+                  d="M48 33L36 45M36 45L24 33M36 45V9M63 45V51C63 54.3137 60.3137 57 57 57H15C11.6863 57 9 54.3137 9 51V45"
+                  stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="text-white flex flex-col justify-around items-center p-8">
+      <h2 class="text-6xl">contact</h2>
+      <p class="font-thin text-2xl text-center p-8">
+        Wilt u een <span class="font-bold">bestelling</span> plaatsen of heeft u een <span
+          class="font-bold">vraag?</span> Wij staan voor u klaar.
+      </p>
+      <p class="text-center font-thin">
+        Telefoon: 06-123456789
+
+      </p>
+      <p class="text-center font-thin">E-mail: sanisupply@info.nl</p>
     </div>
   </div>
 </body>
@@ -107,51 +146,117 @@
     }
 
     16% {
-      transform: translateX(-50vw);
+      transform: translateX(-100vw);
     }
 
     24% {
-      transform: translateX(-50vw);
+      transform: translateX(-100vw);
     }
 
     32% {
-      transform: translateX(-100vw);
+      transform: translateX(-200vw);
     }
 
     40% {
-      transform: translateX(-100vw);
+      transform: translateX(-200vw);
     }
 
     48% {
-      transform: translateX(-150vw);
+      transform: translateX(-300vw);
     }
 
     56% {
-      transform: translateX(-150vw);
+      transform: translateX(-300vw);
     }
 
     64% {
-      transform: translateX(-200vw);
+      transform: translateX(-400vw);
     }
 
     72% {
-      transform: translateX(-200vw);
+      transform: translateX(-400vw);
     }
 
     80% {
-      transform: translateX(-250vw);
+      transform: translateX(-500vw);
     }
 
     88% {
-      transform: translateX(-250vw);
+      transform: translateX(-500vw);
     }
 
     100% {
-      transform: translateX(-300vw);
+      transform: translateX(-600vw);
     }
   }
+
+
+  @media (min-width: 1280px) {
+    @keyframes fadeIn {
+      0% {
+        transform: translateX(0vw);
+      }
+
+      8% {
+        transform: translateX(0vw);
+      }
+
+      16% {
+        transform: translateX(-50vw);
+      }
+
+      24% {
+        transform: translateX(-50vw);
+      }
+
+      32% {
+        transform: translateX(-100vw);
+      }
+
+      40% {
+        transform: translateX(-100vw);
+      }
+
+      48% {
+        transform: translateX(-150vw);
+      }
+
+      56% {
+        transform: translateX(-150vw);
+      }
+
+      64% {
+        transform: translateX(-200vw);
+      }
+
+      72% {
+        transform: translateX(-200vw);
+      }
+
+      80% {
+        transform: translateX(-250vw);
+      }
+
+      88% {
+        transform: translateX(-250vw);
+      }
+
+      100% {
+        transform: translateX(-300vw);
+      }
+    }
+  }
+
 
   img {
     max-width: none;
   }
 </style>
+
+<script>
+  const menu = document.getElementById('menu');
+  const nav = document.getElementById('list');
+  menu.addEventListener('click', () => {
+    nav.classList.toggle('hidden');
+  });
+</script>
