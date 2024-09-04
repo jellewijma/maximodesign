@@ -185,6 +185,15 @@ function showGallery(state) {
 }
 
 function createImage(imgNumber) {
+  if (imgNumber == 0) {
+    let img = document.createElement('img');
+    img.setAttribute('src', catalogus.img[imgNumber].url);
+    img.classList = 'w-full object-contain';
+    img.dataset.index = imgNumber;
+    img.onclick = showImage;
+    gallery.appendChild(img);
+    return;
+  }
   let img = document.createElement('img');
   img.setAttribute('src', catalogus.img[imgNumber].url);
   img.classList = ((imgNumber % 2 !== 0) ? 'w-1/2 object-contain object-right' : 'w-1/2 object-contain object-left');
