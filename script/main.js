@@ -261,7 +261,7 @@ function showImage(e) {
 
   // create modal
   let modal = document.createElement('div');
-  modal.classList = 'fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center';
+  modal.classList = 'fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center modal';
   modal.onclick = closeModal;
   document.body.appendChild(modal);
 
@@ -280,5 +280,5 @@ function showImage(e) {
 }
 
 function closeModal() {
-  document.querySelector('.fixed').remove();
+  document.querySelector('.modal').remove();
 }
