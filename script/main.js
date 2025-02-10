@@ -277,7 +277,7 @@ function showImage(e) {
 
   // create modal
   let modal = document.createElement('div');
-  modal.classList = 'fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 flex justify-center items-center modal backdrop-blur-sm';
+  modal.classList = 'fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 flex justify-center items-center modal backdrop-blur-xs';
   modal.onclick = closeModal;
   document.body.appendChild(modal);
 
