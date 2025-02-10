@@ -28,12 +28,12 @@ function init() {
   // load images
   catalogus = {
     "img": [
-      { "placement": 1, "url": 'https://cdn.jsdelivr.net/gh/jellewijma/maximodesign@main/catalogus/1.webp' },
-      { "placement": 2, "url": 'https://cdn.jsdelivr.net/gh/jellewijma/maximodesign@main/catalogus/2.webp' },
-      { "placement": 3, "url": 'https://cdn.jsdelivr.net/gh/jellewijma/maximodesign@main/catalogus/3.webp' },
-      { "placement": 4, "url": 'https://cdn.jsdelivr.net/gh/jellewijma/maximodesign@main/catalogus/4.webp' },
-      { "placement": 5, "url": 'https://cdn.jsdelivr.net/gh/jellewijma/maximodesign@main/catalogus/5.webp' },
-      { "placement": 6, "url": 'https://cdn.jsdelivr.net/gh/jellewijma/maximodesign@main/catalogus/6.webp' },
+      { "placement": 1, "url": 'https://cdn.jsdelivr.net/gh/jellewijma/maximodesign/catalogus/1.webp' },
+      { "placement": 2, "url": 'https://cdn.jsdelivr.net/gh/jellewijma/maximodesign/catalogus/2.webp' },
+      { "placement": 3, "url": 'https://cdn.jsdelivr.net/gh/jellewijma/maximodesign/catalogus/3.webp' },
+      { "placement": 4, "url": 'https://cdn.jsdelivr.net/gh/jellewijma/maximodesign/catalogus/4.webp' },
+      { "placement": 5, "url": 'https://cdn.jsdelivr.net/gh/jellewijma/maximodesign/catalogus/5.webp' },
+      { "placement": 6, "url": 'https://cdn.jsdelivr.net/gh/jellewijma/maximodesign/catalogus/6.webp' },
       { "placement": 7, "url": 'https://cdn.jsdelivr.net/gh/jellewijma/maximodesign/catalogus/7.webp' },
       { "placement": 8, "url": 'https://cdn.jsdelivr.net/gh/jellewijma/maximodesign/catalogus/8.webp' },
       { "placement": 9, "url": 'https://cdn.jsdelivr.net/gh/jellewijma/maximodesign/catalogus/9.webp' },
