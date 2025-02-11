@@ -171,7 +171,7 @@ function showGallery(state) {
       imgEl.loading = 'lazy';
       slider.appendChild(imgEl);
       gallery.appendChild(slider);
-      slider.classList = 'flex flex-col overflow-y-scroll px-8 py-4 w-full';
+      slider.classList = 'flex flex-col overflow-y-scroll pt-36 px-8 py-4 w-full';
       // gallery.classList = 'flex flex-col overflow-y-scroll p-8';
     }
     );
