@@ -20,11 +20,6 @@ function init() {
   sidebar = document.getElementById('sidebar');
   sidebar.addEventListener('click', goToSlide);
 
-
-  // https://jellewijma.github.io/maximodesign/catalogus/1.webp
-  // https://cdn.jsdelivr.net/gh/jellewijma/maximodesign/catalogus/1.webp
-
-
   // load images
   catalogus = {
     "img": [
@@ -199,9 +194,6 @@ function showGallery(state) {
     }
     counter.innerHTML = `${page} / ${catalogus.img.length}`;
   }
-
-
-
 }
 
 function createImage(imgNumber) {
