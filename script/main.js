@@ -168,7 +168,6 @@ function showGallery(state) {
       let imgEl = document.createElement('img');
       imgEl.setAttribute('src', img.url);
       imgEl.classList = 'w-full object-contain pb-4';
-      imgEl.loading = 'lazy';
       slider.appendChild(imgEl);
       gallery.appendChild(slider);
       slider.classList = 'flex flex-col overflow-y-scroll pt-36 px-8 py-4 w-full';
