@@ -1,1 +1,96 @@
 @import "tailwindcss";
+
+@layer base {
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@layer utilities {
+  @keyframes fadeIn {
+
+    0%,
+    8% {
+      transform: translateX(0vw);
+    }
+
+    16%,
+    24% {
+      transform: translateX(-100vw);
+    }
+
+    32%,
+    40% {
+      transform: translateX(-200vw);
+    }
+
+    48%,
+    56% {
+      transform: translateX(-300vw);
+    }
+
+    64%,
+    72% {
+      transform: translateX(-400vw);
+    }
+
+    80%,
+    88% {
+      transform: translateX(-500vw);
+    }
+
+    100% {
+      transform: translateX(-600vw);
+    }
+  }
+
+  @keyframes fadeInXL {
+
+    0%,
+    8% {
+      transform: translateX(0vw);
+    }
+
+    16%,
+    24% {
+      transform: translateX(-50vw);
+    }
+
+    32%,
+    40% {
+      transform: translateX(-150vw);
+    }
+
+    48%,
+    56% {
+      transform: translateX(-200vw);
+    }
+
+    64%,
+    72% {
+      transform: translateX(-250vw);
+    }
+
+    80%,
+    88% {
+      transform: translateX(-300vw);
+    }
+
+    100% {
+      transform: translateX(-350vw);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 20s infinite;
+  }
+
+  .animate-fadeInXL {
+    animation: fadeInXL 20s infinite;
+  }
+}
