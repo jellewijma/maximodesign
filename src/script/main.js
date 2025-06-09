@@ -296,3 +296,10 @@ function showImage(e) {
 function closeModal() {
   document.querySelector('.modal').remove();
 }
+
+const menu = document.getElementById('menu');
+const nav = document.getElementById('list');
+menu.addEventListener('click', () => {
+  nav.classList.toggle('hidden');
+  nav.classList.toggle('flex');
+});
